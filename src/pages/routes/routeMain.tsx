@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 import { routes } from "./constant";
 import About from "@/components/about/about";
 import Causes from "@/components/causes/causes";
