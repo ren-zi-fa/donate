@@ -1,5 +1,5 @@
-import {Route, Routes } from "react-router-dom";
-import { routes } from "./constant";
+import { Route, Routes } from "react-router-dom";
+import { route } from "./constant";
 import About from "@/components/about/about";
 import Causes from "@/components/causes/causes";
 import NotFound from "@/components/notfound/notFound";
@@ -9,9 +9,9 @@ export default function RouteMain() {
   return (
     <>
       <Routes>
-        <Route path={routes[0]} element={<Home />} />
-        <Route path={routes[1]} element={<About />} />
-        <Route path={routes[2]} element={<Causes />} />
+        <Route path={route[0]} element={<Home />} />
+        <Route path={route[1]} element={<About />} />
+        <Route path={route[2]} element={<Causes />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
