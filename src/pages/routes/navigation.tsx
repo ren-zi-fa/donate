@@ -9,7 +9,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AlignJustify, ArrowRightCircle } from "lucide-react";
-import { Nav_Link, route } from "./constant";
+import { Nav_Link} from "./constant";
 import { Link } from "react-router-dom";
 
 export function Navbar() {
