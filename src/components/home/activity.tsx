@@ -8,7 +8,7 @@ export default function Activity() {
       <h1 className="text-center py-1 px-3 text-gray-100 font-extralight rounded-xl bg-orange-400  w-fit mx-auto">
         What We Do
       </h1>
-      <h2 className="text-center text-3xl font-semibold my-8">
+      <h2 className="text-center text-xl md:text-3xl font-semibold my-8">
         Pelajari Lebih Lanjut <br /> Tentang Apa yang Kami <br />
         Lakukan dan Ikut Terlibat
       </h2>
@@ -22,7 +22,7 @@ export default function Activity() {
               Child Education
             </h1>
           </CardHeader>
-          <CardDescription>
+          <CardDescription className="text-center">
             Bersama, Kita Buka Pintu Pendidikan untuk Setiap Anak.
           </CardDescription>
           <Button className="w-1/2 mx-auto bg-orange-500">Learn More</Button>
@@ -36,7 +36,7 @@ export default function Activity() {
               Medical Treatment
             </h1>
           </CardHeader>
-          <CardDescription>
+          <CardDescription className="text-center">
             Bersama, Kita Bisa Memberikan Akses Kesehatan yang Layak.
           </CardDescription>
           <Button className="w-1/2 mx-auto bg-orange-500">Learn More</Button>
@@ -50,7 +50,7 @@ export default function Activity() {
               Pure Drinking Water
             </h1>
           </CardHeader>
-          <CardDescription>
+          <CardDescription className="text-center">
             Air Bersih untuk Hari Ini, Masa Depan yang Lebih Baik untuk Besok.
           </CardDescription>
           <Button className="w-1/2 mx-auto bg-orange-500">Learn More</Button>

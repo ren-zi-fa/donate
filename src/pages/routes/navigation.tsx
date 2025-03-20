@@ -9,7 +9,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AlignJustify, ArrowRightCircle } from "lucide-react";
-import { Nav_Link} from "./constant";
+import { Nav_Link } from "./constant";
 import { Link } from "react-router-dom";
 
 export function Navbar() {
@@ -27,16 +27,13 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="absolute inset-x-0 z-50 px-0 md:x-4">
-      <div className="flex justify-between items-center fixed md:static w-full  backdrop-blur-md md:backdrop-blur-none md:border-none border-b border-gray-300 ">
-        {/* Logo dengan Background dan Border */}
-        <div className=" px-4 py-2 rounded-md shadow-md md:border-b border-gray-300 border-none">
+    <nav className="absolute inset-x-0 z-50 px-0 md:px-4 md:x-4  ">
+      <div className="flex justify-between items-center fixed md:static w-full backdrop-blur-md md:backdrop-blur-none md:border-none border-b border-gray-300 ">
+        <div className=" px-4 py-2">
           <h1 className="text-4xl font-bold text-white">
-            <span className="text-orange-500">Chari</span>Team
+            <span className="text-orange-500">Do</span>Nate
           </h1>
         </div>
-
-        {/* Navigation Links (Hidden in Mobile) */}
         <div className="md:flex space-x-4 text-xl text-black md:text-white items-center hidden">
           {Nav_Link.map((item, index) => (
             <div key={index}>
@@ -50,7 +47,6 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation (OpenSheet) */}
       {isMobile ? (
         <Sheet>
           <SheetTrigger asChild className="">
@@ -83,4 +79,3 @@ export function Navbar() {
     </nav>
   );
 }
-

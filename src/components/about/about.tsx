@@ -1,5 +1,9 @@
 export default function About() {
-    return (
-        <div className=""> halaman About </div>
-    )
-};
+  return (
+    <div className="h-screen">
+      <div className="">
+        
+      </div>
+    </div>
+  );
+}

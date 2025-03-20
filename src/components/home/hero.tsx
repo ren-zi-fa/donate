@@ -28,7 +28,7 @@ export default function HeroBanner() {
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
   return (
-    <>
+    <div className="relative w-full  h-screen overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full " ref={emblaRef}>
         <div className="flex">
           {slides.map((slide, index) => (
@@ -84,6 +84,6 @@ export default function HeroBanner() {
       >
         <ChevronRight strokeWidth={5} />
       </Button>
-    </>
+    </div>
   );
 }

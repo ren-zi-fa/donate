@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <h1 className="text-4xl font-bold text-black">
-              <span className="text-orange-500">Chari</span>Team
+              <span className="text-orange-500">Do</span>Nate
             </h1>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -18,9 +18,7 @@ export default function Footer() {
                   <a href="">Chari Team</a>
                 </li>
                 <li>
-                  <a href="">
-                    React Js Vite
-                  </a>
+                  <a href="">React Js Vite</a>
                 </li>
               </ul>
             </div>
@@ -30,7 +28,7 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                 <a href="">Github</a>
+                  <a href="">Github</a>
                 </li>
                 <li>
                   <a
@@ -64,9 +62,9 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © {new Date().getFullYear()} {""}
+            © {new Date().getFullYear()} {""}
             <a href="" className="hover:underline">
-            ChariTeam
+              DoNate
             </a>
             . All Rights Reserved.
           </span>
