@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 export default function AboutHome() {
   return (
-    <div className="mt-20 flex flex-col md:flex-row gap-4  h-fit">
+    <div className="mt-20 flex flex-col md:flex-row gap-4 p-4 md:p-0 h-fit">
       <div className="relative ms-6">
         <img src={aboutImage1} alt="donate" className="w-[800px]" />
         <img
@@ -15,7 +15,7 @@ export default function AboutHome() {
         />
       </div>
       <div className="">
-        <h1 className="text-sm font-semibold ">about us</h1>
+        <h1 className="text-sm font-semibold bg-orange-500 w-fit rounded-4xl p-2 text-white ">about us</h1>
         <h3 className="text-3xl font-semibold tracking-tight">
           Kami Membuka Kesempatan <br />
           untuk kamu yang ingin berbagi <br /> kepada orang yang mmebutuhkan
@@ -27,7 +27,7 @@ export default function AboutHome() {
             kamu masih bisa memberikan manfaat yang besar bagi mereka yang
             membutuhkan.
           </CardDescription>
-          <CardTitle>Developer</CardTitle>
+          <CardTitle className="underline text-orange-500">Developer</CardTitle>
         </Card>
         <p>
           Keterbatasan akses dan kurangnya transparansi sering menghambat
