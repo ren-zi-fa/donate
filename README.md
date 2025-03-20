@@ -1,54 +1,52 @@
-# React + TypeScript + Vite
+# Landing Page - Platform Donasi untuk Pendidikan, Air Bersih, dan Kehidupan Sehat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Deskripsi Proyek
+Landing page ini merupakan platform donasi yang berfokus pada tiga sektor utama:
+- **Pendidikan**: Membantu anak-anak mendapatkan akses pendidikan yang layak.
+- **Air Bersih**: Menyediakan akses air bersih bagi masyarakat yang membutuhkan.
+- **Kehidupan Sehat**: Mendukung inisiatif kesehatan untuk meningkatkan kesejahteraan komunitas.
 
-Currently, two official plugins are available:
+Website ini dikembangkan menggunakan teknologi modern dengan desain yang responsif dan pengalaman pengguna yang interaktif.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Fitur Utama
+- **Tampilan Interaktif**: Menggunakan animasi dan carousel untuk pengalaman pengguna yang menarik.
+- **Navigasi yang Mudah**: Dibangun dengan `react-router-dom` untuk pengalaman navigasi yang lancar.
+- **Desain Modern**: Memanfaatkan Tailwind CSS untuk styling yang efisien dan cepat.
+- **Kinerja Optimal**: Dibangun dengan Vite untuk pengembangan dan bundling yang cepat.
+- **Keamanan & Kualitas Kode**: Menggunakan ESLint dan TypeScript untuk memastikan kualitas kode yang tinggi.
 
-## Expanding the ESLint configuration
+## Teknologi yang Digunakan
+- `react`: ^19.0.0
+- `react-router-dom`: ^7.3.0
+- `tailwindcss`: ^4.0.14
+- `tailwind-merge`: ^3.0.2
+- `tailwindcss-animate`: ^1.0.7
+- `motion`: ^12.5.0
+- `lucide-react`: ^0.483.0
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Cara Menjalankan Proyek
+1. Clone repository ini:
+   ```sh
+   git clone https://github.com/username/repository.git
+   cd repository
+   ```
+2. Install dependencies:
+   ```sh
+   bun install
+   ```
+3. Jalankan proyek:
+   ```sh
+   bun run dev
+   ```
+4. Buka di browser:
+   ```
+   http://localhost:5173
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Kontribusi
+Jika ingin berkontribusi, silakan buat pull request atau ajukan issue pada repository ini.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+
+
