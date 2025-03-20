@@ -3,18 +3,18 @@ import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
-  SheetHeader,
   SheetTitle,
   SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { AlignJustify, ArrowRightCircle } from "lucide-react";
 import { Nav_Link } from "./constant";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -37,7 +37,14 @@ export function Navbar() {
         <div className="md:flex space-x-4 text-xl text-black md:text-white items-center hidden">
           {Nav_Link.map((item, index) => (
             <div key={index}>
-              <Link to={item.path}>{item.title}</Link>
+              <NavLink
+                to={item.path}
+                className={({ isActive }) =>
+                  cn("text-white", isActive && "text-orange-500")
+                }
+              >
+                {item.title}
+              </NavLink>
             </div>
           ))}
           <Button variant="outline" size="lg" className="text-black">
@@ -48,7 +55,7 @@ export function Navbar() {
       </div>
 
       {isMobile ? (
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="">
             <Button variant="outline" className="fixed right-2 top-3">
               <AlignJustify color="black" />
@@ -56,20 +63,22 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent
             side="top"
-            className="bg-white shadow-md border-b border-gray-300 [&>button]:hidden"
+            className="bg-gray-950 shadow-md border-b border-gray-300 [&>button]:hidden"
           >
-            <SheetHeader className="bg-white/90 p-4 border-b border-gray-300 shadow-sm">
-              <SheetTitle className="text-lg font-bold text-black">
-                Menu
-              </SheetTitle>
-              <SheetDescription className="text-gray-600">
-                Pilih opsi yang tersedia.
-              </SheetDescription>
-            </SheetHeader>
-            <ul className="mt-4 space-y-2 text-black">
+            <SheetTitle />
+            <SheetDescription />
+            <ul className="mt-4 ms-4 mb-5 font-semibold space-y-2 text-xl text-white">
               {Nav_Link.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.path}>{item.title}</Link>
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      cn("text-white", isActive && "text-orange-500")
+                    }
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.title}
+                  </NavLink>
                 </li>
               ))}
             </ul>
