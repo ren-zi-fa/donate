@@ -2,6 +2,7 @@ import { Navbar } from "@/pages/routes/navigation";
 import HeroBanner from "./hero";
 import AboutHome from "./aboutHome";
 import CausesHome from "./causesHome";
+import Activity from "./activity";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
         <HeroBanner />
       </div>
       <AboutHome />
-      <CausesHome/>
+      <CausesHome />
+      <Activity />
     </div>
   );
 }
