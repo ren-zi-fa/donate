@@ -6,6 +6,7 @@ import NotFound from "@/components/notfound/notFound";
 import Home from "@/components/home/home";
 import { Navbar } from "./navigation";
 import Footer from "@/components/ui/footer";
+import Contact from "@/components/contact/contact";
 
 export default function RouteMain() {
   return (
@@ -15,6 +16,7 @@ export default function RouteMain() {
         <Route path={route[0]} element={<Home />} />
         <Route path={route[1]} element={<About />} />
         <Route path={route[2]} element={<Causes />} />
+        <Route path={route[3]} element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
