@@ -27,7 +27,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="absolute inset-x-0 z-50 ">
+    <nav className="absolute inset-x-0 z-50 px-0 md:x-4">
       <div className="flex justify-between items-center fixed md:static w-full  backdrop-blur-md md:backdrop-blur-none md:border-none border-b border-gray-300 ">
         {/* Logo dengan Background dan Border */}
         <div className=" px-4 py-2 rounded-md shadow-md md:border-b border-gray-300 border-none">
