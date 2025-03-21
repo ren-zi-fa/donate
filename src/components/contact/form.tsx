@@ -34,7 +34,7 @@ export default function FormContact() {
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-          className="border-none w-[400px] h-[500px] mx-auto sm:w-[600px]"
+          className="border-none w-[360px] h-[500px] mx-auto sm:w-[600px]"
         ></iframe>
       </div>
     </div>
