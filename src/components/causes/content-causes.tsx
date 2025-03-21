@@ -25,10 +25,10 @@ export default function ContentCauses() {
             anak-anak kurang mampu, membantu mereka meraih peluang yang lebih
             baik di masa depan
           </CardDescription>
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-row">
-              <div className="text-xs">Rp 10,000 Goal -</div>
-              <div className="text-xs">Rp 9,000,000 Raised</div>
+          <div className="flex flex-col">
+            <div className="flex">
+              <div className="text-xs">Rp 10,000 - </div>
+              <div className="text-xs">Rp 9,000,000</div>
             </div>
             <div className="w-full bg-gray-200 rounded-lg">
               <div className="bg-orange-500 h-3 rounded-lg w-[90%]"></div>
@@ -53,8 +53,8 @@ export default function ContentCauses() {
           </CardDescription>
           <div className="flex flex-col gap-2">
             <div className="flex flex-row">
-              <div className="text-xs">Rp 10,000 Goal -</div>
-              <div className="text-xs">Rp 9,000,000 Raised</div>
+              <div className="text-xs">Rp 10,000 - </div>
+              <div className="text-xs">Rp 9,000,000 </div>
             </div>
             <div className="w-full bg-gray-200 rounded-lg">
               <div className="bg-orange-500 h-3 rounded-lg w-[90%]"></div>
@@ -75,8 +75,8 @@ export default function ContentCauses() {
           </CardDescription>
           <div className="flex flex-col gap-2">
             <div className="flex flex-row">
-              <div className="text-xs">Rp 10,000 Goal -</div>
-              <div className="text-xs">Rp 9,000,000 Raised</div>
+              <div className="text-xs">Rp10,000 -</div>
+              <div className="text-xs">Rp9,000,000</div>
             </div>
             <div className="w-full bg-gray-200 rounded-lg">
               <div className="bg-orange-500 h-3 rounded-lg w-[90%]"></div>
