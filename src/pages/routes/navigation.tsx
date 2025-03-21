@@ -9,9 +9,6 @@ import {
 } from "@/components/ui/sheet";
 import {
   AlignJustify,
-  ArrowRight,
-  ArrowRightCircle,
-  ArrowRightFromLine,
   ArrowRightIcon,
 } from "lucide-react";
 import { Nav_Link } from "./constant";
