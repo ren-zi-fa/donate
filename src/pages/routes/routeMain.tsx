@@ -7,11 +7,13 @@ import Home from "@/components/home/home";
 import { Navbar } from "./navigation";
 import Footer from "@/components/ui/footer";
 import Contact from "@/components/contact/contact";
+import { ScrollToTop } from "@/hooks/scrollTop";
 
 export default function RouteMain() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path={route[0]} element={<Home />} />
         <Route path={route[1]} element={<About />} />

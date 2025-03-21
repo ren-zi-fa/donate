@@ -24,9 +24,9 @@ export function Breadcrumbs({ items }: BreadcrumbProps) {
       <BreadcrumbList>
         {items.map((item, index) => (
           <React.Fragment key={index}>
-            <BreadcrumbItem>
+            <BreadcrumbItem className="text-md md:text-2xl ">
               {item.href ? (
-                <BreadcrumbLink href={item.href} className="text-white">
+                <BreadcrumbLink href={item.href} className="text-white hover:text-orange-500">
                   {item.label}
                 </BreadcrumbLink>
               ) : (

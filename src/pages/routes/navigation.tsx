@@ -7,7 +7,13 @@ import {
   SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { AlignJustify, ArrowRightCircle } from "lucide-react";
+import {
+  AlignJustify,
+  ArrowRight,
+  ArrowRightCircle,
+  ArrowRightFromLine,
+  ArrowRightIcon,
+} from "lucide-react";
 import { Nav_Link } from "./constant";
 import { NavLink } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -47,9 +53,9 @@ export function Navbar() {
               </NavLink>
             </div>
           ))}
-          <Button variant="outline" size="lg" className="text-black">
-            Donate Now
-            <ArrowRightCircle className="w-10 h-10" />
+          <Button size="lg" className="bg-orange-500 hover:bg-orange-600">
+            Donate
+            <ArrowRightIcon className="w-10 h-10 mt-1" />
           </Button>
         </div>
       </div>

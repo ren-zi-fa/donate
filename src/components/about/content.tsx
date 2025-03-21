@@ -37,7 +37,7 @@ export default function Content() {
           lorem sit <br /> clita duo justo magna dolore erat amet
         </p>
         <div className="flex items-center justify-center gap-4 mt-4">
-          <Button> Learn More</Button>
+          <Button className="bg-orange-500 hover:bg-orange-600"> Learn More</Button>
           <Button variant="outline"> Contact Us</Button>
         </div>
       </div>

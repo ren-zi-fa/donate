@@ -2,8 +2,13 @@ import aboutImage1 from "@/assets/about-1.jpg";
 import aboutImage2 from "@/assets/about-2.jpg";
 import { Card, CardDescription, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutHome() {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/contact");
+  };
   return (
     <div className="mt-20 flex flex-col md:flex-row gap-4 p-4 md:p-0 h-fit">
       <div className="relative ms-6">
@@ -15,7 +20,9 @@ export default function AboutHome() {
         />
       </div>
       <div className="">
-        <h1 className="text-sm font-semibold bg-orange-500 w-fit rounded-4xl p-2 text-white ">about us</h1>
+        <h1 className="text-sm font-semibold bg-orange-500 w-fit rounded-4xl p-2 text-white ">
+          about us
+        </h1>
         <h3 className="text-3xl font-semibold tracking-tight">
           Kami Membuka Kesempatan <br />
           untuk kamu yang ingin berbagi <br /> kepada orang yang mmebutuhkan
@@ -36,8 +43,11 @@ export default function AboutHome() {
           meningkatkan partisipasi sosial, dan memastikan donasi tepat sasaran.
         </p>
         <div className="flex items-center justify-center gap-4">
-          <Button> Learn More</Button>
-          <Button variant="outline"> Contact Us</Button>
+          <Button className="bg-orange-500 hover:bg-orange-600">
+            {" "}
+            Learn More
+          </Button>
+          <Button variant="outline" onClick={handleNavigate}> Contact Us</Button>
         </div>
       </div>
     </div>

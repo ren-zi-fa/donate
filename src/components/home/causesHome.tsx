@@ -6,7 +6,7 @@ import imagecourse3 from "@/assets/courses-3.jpg";
 export default function CausesHome() {
   return (
     <div className=" w-fit mx-auto bg-gray-300 mt-4 p-8 h-fit">
-      <h1 className="text-center p-1 text-orange-500 font-extralight border-2 bg-white rounded-2xl w-fit mx-auto">
+      <h1 className="text-center p-1 text-orange-500 font-normal border-2 bg-white rounded-2xl w-fit mx-auto">
         Feature Causes
       </h1>
       <h2 className="text-center font-bold text-2xl md:text-4xl my-4">
