@@ -9,8 +9,10 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import ContentCauses from "./content-causes";
+import { useDocumentTitle } from "@/hooks/useTitle";
 
 export default function Causes() {
+    useDocumentTitle("Causes - DoNate");
   return (
     <>
       <div className="relative w-full h-[400px] overflow-hidden bg-gray-600">

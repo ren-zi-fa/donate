@@ -9,8 +9,10 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 import FormContact from "./form";
+import { useDocumentTitle } from "@/hooks/useTitle";
 
 export default function Contact() {
+    useDocumentTitle("Contact - DoNate");
   return (
     <>
       <div className="relative w-full h-[400px] overflow-hidden bg-gray-600">
