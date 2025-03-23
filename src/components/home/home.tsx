@@ -4,6 +4,8 @@ import CausesHome from "./causesHome";
 import Activity from "./activity";
 import DonateForm from "./donate";
 import { useDocumentTitle } from "@/hooks/useTitle";
+import Members from "../about/members";
+import Testimonial from "./testimonial";
 export default function Home() {
   useDocumentTitle("Home - DoNate");
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <CausesHome />
       <Activity />
       <DonateForm />
+      <Members />
+      <Testimonial />
     </>
   );
 }
