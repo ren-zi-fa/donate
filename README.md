@@ -19,7 +19,6 @@ Website ini dikembangkan menggunakan teknologi modern dengan desain yang respons
 - `react`: ^19.0.0
 - `react-router-dom`: ^7.3.0
 - `tailwindcss`: ^4.0.14
-- `tailwind-merge`: ^3.0.2
 - `tailwindcss-animate`: ^1.0.7
 - `motion`: ^12.5.0
 - `lucide-react`: ^0.483.0
@@ -29,24 +28,21 @@ Website ini dikembangkan menggunakan teknologi modern dengan desain yang respons
 ## Cara Menjalankan Proyek
 1. Clone repository ini:
    ```sh
-   git clone https://github.com/username/repository.git
+   git clone https://github.com/ren-zi-fa/donate.git
    cd repository
    ```
 2. Install dependencies:
    ```sh
-   bun install
+   bun install / npm install
    ```
 3. Jalankan proyek:
    ```sh
-   bun run dev
+   bun run dev / npm run dev
    ```
 4. Buka di browser:
    ```
    http://localhost:5173
    ```
-
-## Kontribusi
-Jika ingin berkontribusi, silakan buat pull request atau ajukan issue pada repository ini.
 
 
 

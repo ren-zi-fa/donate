@@ -3,6 +3,8 @@ import aboutImage2 from "@/assets/about-2.jpg";
 import { Card, CardDescription, CardTitle } from "../ui/card";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { containerVariants } from "@/lib/efek";
 
 export default function AboutHome() {
   const navigate = useNavigate();
@@ -10,7 +12,7 @@ export default function AboutHome() {
     navigate("/contact");
   };
   return (
-    <div className="mt-20 flex flex-col md:flex-row gap-4 p-4 md:p-0 h-fit">
+    <motion.div className="mt-20 flex flex-col md:flex-row gap-4 p-4 md:p-0 h-fit">
       <div className="relative ms-6">
         <img src={aboutImage1} alt="donate" className="w-[800px]" />
         <img
@@ -27,15 +29,25 @@ export default function AboutHome() {
           Kami Membuka Kesempatan <br />
           untuk kamu yang ingin berbagi <br /> kepada orang yang mmebutuhkan
         </h3>
-        <Card className="px-4 border-b-4 border-orange-600 mt-4">
-          <CardDescription>
-            Kalau kamu tidak mempunyai uang lebih untuk berdonasi, sedikit uang{" "}
-            <br />
-            kamu masih bisa memberikan manfaat yang besar bagi mereka yang
-            membutuhkan.
-          </CardDescription>
-          <CardTitle className="underline text-orange-500">Developer</CardTitle>
-        </Card>
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <Card className="px-4 border-b-4 border-orange-600 mt-4">
+            <CardDescription>
+              Kalau kamu tidak mempunyai uang lebih untuk berdonasi, sedikit
+              uang <br />
+              kamu masih bisa memberikan manfaat yang besar bagi mereka yang
+              membutuhkan.
+            </CardDescription>
+            <CardTitle className="underline text-orange-500">
+              Developer
+            </CardTitle>
+          </Card>
+        </motion.div>
+
         <p>
           Keterbatasan akses dan kurangnya transparansi sering menghambat
           penggalangan dana. <br /> Platform ini hadir untuk menghubungkan pihak
@@ -47,9 +59,12 @@ export default function AboutHome() {
             {" "}
             Learn More
           </Button>
-          <Button variant="outline" onClick={handleNavigate}> Contact Us</Button>
+          <Button variant="outline" onClick={handleNavigate}>
+            {" "}
+            Contact Us
+          </Button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
