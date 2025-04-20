@@ -1,5 +1,5 @@
 import Content from "./content";
-import Members from "./members";
+import Members from "../members";
 import { useDocumentTitle } from "@/hooks/useTitle";
 import Menu from "../Menu";
 
