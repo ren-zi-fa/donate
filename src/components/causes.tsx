@@ -19,15 +19,15 @@ export default function CausesCard() {
 
           if (index === 0) {
             // Masuk dari kiri
-            initialAnim = { opacity: 0, x: -100 };
+            initialAnim = { opacity: 0, x: -10 };
             whileInViewAnim = { opacity: 1, x: 0 };
           } else if (index === 1) {
             // Masuk dari atas
-            initialAnim = { opacity: 0, y: -100 };
+            initialAnim = { opacity: 0, y: -10 };
             whileInViewAnim = { opacity: 1, y: 0 };
           } else if (index === 2) {
             // Masuk dari kanan
-            initialAnim = { opacity: 0, x: 100 };
+            initialAnim = { opacity: 0, x: 10 };
             whileInViewAnim = { opacity: 1, x: 0 };
           }
           return (
